@@ -1,0 +1,61 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO ring_oscillator_final
+  CLASS BLOCK ;
+  FOREIGN ring_oscillator_final ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 121.850 BY 71.205 ;
+  PIN VinVCO
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 8.000000 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.010 5.705 0.600 23.605 ;
+    END
+  END VinVCO
+  PIN VO
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 1.060800 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 120.850 32.405 121.850 32.850 ;
+    END
+  END VO
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 97.600 0.005 99.200 71.205 ;
+    END
+  END VDD
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 85.650 0.005 87.250 71.205 ;
+    END
+  END GND
+  OBS
+      LAYER Nwell ;
+        RECT 1.050 0.355 121.350 70.655 ;
+      LAYER Metal1 ;
+        RECT 1.235 33.150 121.850 70.515 ;
+        RECT 1.235 32.105 120.550 33.150 ;
+        RECT 1.235 0.455 121.850 32.105 ;
+      LAYER Metal2 ;
+        RECT 0.000 23.905 119.050 70.520 ;
+        RECT 0.000 23.105 0.010 23.605 ;
+        RECT 0.900 5.405 119.050 23.905 ;
+        RECT 0.000 0.455 119.050 5.405 ;
+      LAYER Metal3 ;
+        RECT 1.050 0.000 117.300 71.205 ;
+  END
+END ring_oscillator_final
+END LIBRARY
+

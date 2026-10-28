@@ -1,0 +1,61 @@
+{
+    "DESIGN_NAME": "A53_chip_top",
+    "VERILOG_FILES": [
+        "dir::src/A53_chip_top.v",
+        "dir::src/A53_trng_top.v"
+    ],
+    "EXTRA_VERILOG_MODELS": [
+        "dir::src/analog_stub.v",
+        "dir::src/trng_top_stub.v"
+    ],
+    "MACROS": {
+        "ring_oscillator_final": {
+            "gds": ["dir::macros/ring_oscillator_final.gds"],
+            "lef": ["dir::macros/ring_oscillator_final.lef"],
+            "instances": {
+                "u_trng_core.u_analog": {
+                    "location": [25.0, 25.0],
+                    "orientation": "N"
+                }
+            }
+        },
+        "trng_top": {
+            "gds": ["dir::macros/trng_top.gds"],
+            "lef": ["dir::macros/trng_top.lef"],
+            "instances": {
+                "u_trng_core.u_digital": {
+                    "location": [200.0, 25.0],
+                    "orientation": "N"
+                }
+            }
+        }
+    },
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 550 550",
+    "CORE_AREA": "15 15 535 535",
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 100.0,
+    
+    "VDD_NETS": ["VDD"],
+    "GND_NETS": ["GND"],
+    "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
+    
+    "FP_PDN_ENABLE_MACROS_GRID": true,
+    "FP_PDN_ENABLE_GLOBAL_CONNECTIONS": true,
+    "PDN_MACRO_CONNECTIONS": [
+    "u_trng_core.u_digital VDD GND vccd1 vssd1",
+    "u_trng_core.u_analog VDD GND VDD GND"
+    ],
+    "RUN_IRDROP_REPORT": false,
+    "PDN_ENABLE_RAILS": true,
+    "RUN_ANTENNA_REPAIR": true,
+    "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "RUN_POST_GRT_RESIZER_TIMING": true,
+    "MACRO_HALO": [5, 5],
+    "GPL_CELL_PADDING": 4,
+    "DPL_CELL_PADDING": 4,
+    "DRT_OPT_DISABLE_VIA_GEN": true,
+    "FP_DEF_TEMPLATE" : "dir::def/A53_D_fixed.def",
+    "RSZ_DONT_TOUCH_LIST": ["vin_vco", "analog_raw_out"],
+    "MAGIC_ZEROIZE_ORIGIN": false 
+}
