@@ -1,0 +1,20 @@
+{
+    "DESIGN_NAME": "trng_top",
+    "VERILOG_FILES": [
+        "dir::src/trng_top.v",
+        "dir::src/bist.v",
+        "dir::src/sync_2ff.v",
+        "dir::src/uart_tx.v",
+        "dir::src/von_neumann_whitener.v"
+	 ],
+
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 100.0,
+    "FP_SIZING": "relative",
+    "FP_CORE_UTIL": 50,
+    "PL_TARGET_DENSITY": 0.40,
+    "VDD_NETS": ["vccd1"],
+    "GND_NETS": ["vssd1"],
+    "VDD_VOLTAGE": 3.3,
+    "DIODE_INSERTION_STRATEGY": 4
+}
