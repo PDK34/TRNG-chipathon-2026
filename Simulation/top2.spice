@@ -1,0 +1,27 @@
+* A53_trng_top mixed-signal check
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice
+.include ring_oscillator_final.spice
+.include trng_top_sim.spice
+
+.param vdd=5
+Vdd  vdd 0 PWL(0 0 20n {vdd})
+Vvco vin 0 DC 2.0
+Vclk clk 0 PULSE(0 {vdd} 50n 0.2n 0.2n 49.8n 100n)
+Vrst rst_n 0 PWL(0 0 400n 0 410n {vdd})
+Ven  en 0 PWL(0 0 800n 0 810n {vdd})
+
+Xana vin vo vdd 0 ring_oscillator_final
+Xdig apt_pass clk en rct_pass rst_n vo uart_busy uart_tx vdd 0 trng_top
+Cpad vo 0 20f    
+
+.tran 50p 10n
+.save v(vo) v(clk) v(rst_n) v(en) v(uart_tx) v(uart_busy) v(apt_pass) v(rct_pass) v(vin) v(trng_async)
+.meas tran t100 TRIG v(vo) VAL=2.5 RISE=10 TARG v(vo) VAL=2.5 RISE=110
+.control
+run
+plot v(vo) v(clk) v(rst_n) v(en)
+plot v(apt_pass) v(rct_pass) v(uart_busy) v(uart_tx)
+.endc
+.end

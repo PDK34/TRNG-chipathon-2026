@@ -1,0 +1,19 @@
+* analog smoke test
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include ring_oscillator_final.spice
+
+.param vsup=5
+Vdd  vdd 0 PWL(0 0 20n {vsup})
+Vvco vin 0 DC 2.0
+Xana vin vo vdd 0 ring_oscillator_final
+Cpad vo 0 20f
+.tran 20p 100n
+.save all
+.meas tran vomax MAX v(vo) FROM=40n TO=100n
+.meas tran vomin MIN v(vo) FROM=40n TO=100n
+.control
+run
+plot v(vo)
+plot v(xana.current_starved_inv_8.vi) v(xana.gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.a2) v(xana.gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.a1) v(xana.gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.a2)
+.endc

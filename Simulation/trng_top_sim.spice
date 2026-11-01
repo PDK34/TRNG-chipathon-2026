@@ -1,0 +1,319 @@
+* NGSPICE file created from trng_top.ext - technology: gf180mcuD
+
+
+
+.subckt trng_top apt_pass clk enable rct_pass rst_n trng_async uart_busy uart_tx vccd1
++ vssd1
+X_363_ _358_/B _229_/I _402_/Q _364_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X_294_ _432_/Q _454_/Q _296_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_432_ _432_/D _452_/RN _452_/CLK _432_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_415_ _415_/D _420_/RN _421_/CLK _415_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_346_ _346_/I _397_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_277_ _284_/B _275_/Z _277_/A3 _428_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X_200_ _421_/Q _332_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_329_ _458_/Q _459_/D _330_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+Xoutput7 _435_/Q uart_tx vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_431_ _431_/D _431_/RN _431_/CLK _431_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_362_ _362_/A1 _362_/A2 _362_/B _401_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai21_1
+Xclkbuf_3_6__f_clk clkbuf_0_clk/Z _454_/CLK vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+X_293_ _293_/A1 _293_/A2 _290_/Z _299_/A1 _434_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+X_276_ _428_/Q _273_/Z _277_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_414_ _414_/D _420_/RN _421_/CLK _414_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_345_ _397_/Q _358_/B _351_/A1 _344_/Z _346_/I vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+X_259_ _433_/Q _432_/Q _434_/Q _260_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X_328_ _458_/Q _330_/A1 _328_/B _455_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X_430_ _430_/D _431_/RN _431_/CLK _430_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_361_ _400_/Q _362_/A1 _338_/C _353_/Z _362_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand4_1
+X_292_ _316_/A2 _290_/Z _292_/A3 _433_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and3_1
+X_275_ _428_/Q _273_/Z _275_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and2_1
+X_413_ _413_/D _420_/RN _421_/CLK _413_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_344_ _396_/Q _397_/Q _344_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X_258_ _316_/A2 _283_/A2 _284_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_327_ _456_/Q _327_/A2 _455_/Q _328_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai21_1
+Xfanout9 _392_/A1 _390_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_360_ _362_/A2 _360_/A2 _400_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_291_ _291_/A1 _291_/A2 _291_/A3 _291_/B _292_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai31_1
+X_274_ _284_/B _274_/A2 _273_/Z _427_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X_412_ _412_/D _447_/RN _455_/CLK _412_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_343_ _396_/Q _351_/A1 _343_/B _396_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xmax_cap8 _321_/S _326_/S vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__buf_4
+X_257_ _205_/I _431_/Q _286_/A2 _283_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X_326_ _454_/Q _455_/Q _326_/S _454_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_309_ _442_/Q _455_/Q _309_/S _442_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_290_ _291_/B _291_/A1 _291_/A2 _291_/A3 _290_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__or4_1
+X_273_ _205_/I _427_/Q _426_/Q _425_/Q _273_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and4_1
+X_411_ _411_/D _411_/RN _455_/CLK _411_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_342_ _396_/Q _223_/Z _343_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_256_ _205_/I _254_/B _316_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_325_ _325_/A1 _326_/S _325_/B _453_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai21_1
+Xclkload0 _455_/CLK clkload0/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X_239_ _239_/A1 _392_/B1 _390_/A1 _238_/Z _418_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai22_1
+X_308_ _441_/Q _442_/Q _309_/S _441_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+Xhold23 _457_/Q _458_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyc_1
+Xclkbuf_3_1__f_clk clkbuf_0_clk/Z _459_/CLK vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+X_272_ _427_/Q _269_/Z _274_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_341_ _364_/A2 _341_/A2 _395_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_410_ _410_/D _411_/RN _455_/CLK _410_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_255_ _205_/I _285_/A2 _291_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_324_ _442_/Q _326_/S _325_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+Xclkload1 _459_/CLK clkload1/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X_238_ _239_/A1 _237_/Z _238_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X_307_ _440_/Q _441_/Q _309_/S _440_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_271_ _284_/B _269_/Z _271_/A3 _426_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X_340_ _395_/Q _358_/B _341_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_254_ _431_/Q _286_/A2 _254_/B _263_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X_323_ _452_/Q _441_/Q _326_/S _452_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+Xclkload2 _449_/CLK clkload2/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X_237_ _417_/Q _236_/Z _237_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and2_1
+X_306_ _439_/Q _440_/Q _309_/S _439_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_270_ _205_/I _425_/Q _426_/Q _271_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X_399_ _399_/D _420_/RN _460_/CLK _399_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_322_ _451_/Q _440_/Q _326_/S _451_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_253_ _279_/A1 _253_/A2 _253_/B _286_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai21_1
+Xclkbuf_3_7__f_clk clkbuf_0_clk/Z _431_/CLK vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+Xclkload3 _452_/CLK clkload3/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X_236_ _416_/Q _415_/Q _413_/Q _414_/Q _236_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and4_1
+X_305_ _438_/Q _439_/Q _305_/S _438_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_219_ _302_/A2 _254_/B _261_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+Xclkbuf_0_clk clk clkbuf_0_clk/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+X_398_ _398_/D _460_/RN _460_/CLK _398_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_252_ _427_/Q _426_/Q _428_/Q _253_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X_321_ _450_/Q _439_/Q _321_/S _450_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_235_ _413_/Q _414_/Q _235_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and2_1
+Xclkload4 _421_/CLK clkload4/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X_304_ _437_/Q _438_/Q _309_/S _437_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_218_ _423_/Q _424_/Q _254_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_397_ _397_/D _460_/RN _459_/CLK _397_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_251_ _251_/I0 _251_/I1 _422_/Q _422_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_320_ _449_/Q _438_/Q _321_/S _449_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_449_ _449_/D _452_/RN _449_/CLK _449_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+Xclkload5 _454_/CLK clkload5/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X_234_ _223_/Z _229_/I _234_/A3 _392_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X_303_ _436_/Q _437_/Q _309_/S _436_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_217_ _453_/Q _325_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_396_ _396_/D _411_/RN _459_/CLK _396_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+X_250_ _332_/B _390_/A1 _250_/A3 _251_/I0 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor3_1
+Xfanout20 _453_/RN _419_/RN vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_379_ _409_/Q _410_/Q _374_/Z _382_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X_448_ _448_/D _452_/RN _452_/CLK _448_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+Xclkload6 _431_/CLK clkload6/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X_302_ _205_/I _302_/A2 _394_/Q _393_/Q _305_/S vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and4_1
+X_233_ _358_/B _229_/I _233_/B _248_/C vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X_216_ _414_/Q _386_/B2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_395_ _395_/D _420_/RN _460_/CLK _395_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+Xclkbuf_3_2__f_clk clkbuf_0_clk/Z _449_/CLK vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+Xfanout21 input2/Z _453_/RN vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_378_ _409_/Q _374_/Z _409_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X_447_ _447_/D _447_/RN _449_/CLK _447_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_232_ _223_/Z _234_/A3 _233_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_301_ _435_/Q _301_/I1 _301_/S _435_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_215_ _459_/Q _459_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_394_ _394_/D _420_/RN _460_/CLK _394_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+Xfanout22 _301_/S _205_/I vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_446_ _446_/D _454_/RN _454_/CLK _446_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_377_ _409_/Q _374_/Z _380_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_231_ _402_/Q _455_/Q _234_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+X_300_ _423_/Q _299_/C _300_/B1 _300_/B2 _301_/I1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+X_429_ _429_/D _431_/RN _431_/CLK _429_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+Xinput1 enable _301_/S vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_214_ _434_/Q _299_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_393_ _393_/D _454_/RN _431_/CLK _393_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+Xfanout12 _305_/S _309_/S vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_445_ _445_/D _447_/RN _449_/CLK _445_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_376_ _374_/Z _376_/A2 _408_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_230_ _455_/Q _223_/Z _364_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_428_ _428_/D _431_/RN _431_/CLK _428_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_359_ _338_/C _353_/Z _400_/Q _360_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xinput2 rst_n input2/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_213_ _432_/Q _291_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_392_ _392_/A1 _237_/Z _392_/A3 _392_/B1 _392_/B2 _417_/D vccd1 vccd1 vssd1 vssd1
++ gf180mcu_fd_sc_mcu7t5v0__oai32_1
+Xfanout13 _453_/RN _411_/RN vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_375_ _407_/Q _371_/Z _408_/Q _376_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X_444_ _444_/D _447_/RN _449_/CLK _444_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_427_ _427_/D _431_/RN _454_/CLK _427_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_358_ _338_/C _358_/A2 _358_/B _362_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X_289_ _432_/Q _293_/A2 _289_/B _432_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xinput3 trng_async _457_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_212_ _433_/Q _291_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+Xmax_cap10 _248_/C _392_/B1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__buf_2
+X_391_ _417_/Q _236_/Z _392_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_460_ _460_/D _460_/RN _460_/CLK _460_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+Xfanout14 _453_/RN _460_/RN vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_443_ _443_/D _447_/RN _449_/CLK _443_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_374_ _406_/Q _408_/Q _407_/Q _370_/B _374_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and4_1
+X_426_ _426_/D _454_/RN _454_/CLK _426_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_357_ _400_/Q _353_/Z _358_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_288_ _424_/Q _285_/Z _432_/Q _289_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X_211_ _429_/Q _279_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_409_ _409_/D _411_/RN _455_/CLK _409_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+Xmax_cap11 _351_/A1 _338_/C vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__buf_2
+X_390_ _390_/A1 _236_/Z _390_/A3 _392_/B1 _390_/B2 _416_/D vccd1 vccd1 vssd1 vssd1
++ gf180mcu_fd_sc_mcu7t5v0__oai32_1
+Xfanout15 _452_/RN _447_/RN vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_373_ _407_/Q _371_/Z _407_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X_442_ _442_/D _460_/RN _460_/CLK _442_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_425_ _425_/D _454_/RN _454_/CLK _425_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_287_ _291_/A2 _291_/A3 _293_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_356_ _356_/I _399_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_210_ _430_/Q _253_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_408_ _408_/D _411_/RN _455_/CLK _408_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_339_ _394_/Q _339_/A2 _394_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and2_1
+Xfanout16 _453_/RN _452_/RN vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_372_ _406_/Q _370_/B _406_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X_441_ _441_/D _452_/RN _454_/CLK _441_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_424_ _424_/D _454_/RN _454_/CLK _424_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_286_ _431_/Q _286_/A2 _299_/C _291_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X_355_ _399_/Q _358_/B _338_/C _354_/Z _356_/I vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+Xclkbuf_3_3__f_clk clkbuf_0_clk/Z _452_/CLK vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+X_269_ _205_/I _426_/Q _425_/Q _269_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and3_1
+X_338_ _399_/Q _400_/Q _401_/Q _338_/C _339_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai211_1
+X_407_ _407_/D _411_/RN _459_/CLK _407_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+Xfanout17 _419_/RN _420_/RN vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_371_ _406_/Q _370_/B _371_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and2_1
+X_440_ _440_/D _447_/RN _449_/CLK _440_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_423_ _423_/D _454_/RN _431_/CLK _423_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_285_ _301_/S _285_/A2 _431_/Q _286_/A2 _285_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and4_1
+X_354_ _399_/Q _349_/Z _354_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X_199_ _417_/Q _392_/B2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_268_ _284_/B _267_/Z _425_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_337_ _358_/B _336_/Z _351_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_406_ _406_/D _411_/RN _455_/CLK _406_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+Xfanout18 _419_/RN _454_/RN vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_370_ _370_/A1 _370_/A2 _370_/B _405_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X_422_ _422_/D _454_/RN _431_/CLK _422_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_284_ _284_/A1 _284_/A2 _284_/B _431_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X_353_ _399_/Q _349_/Z _353_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and2_1
+X_198_ _418_/Q _239_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_267_ _267_/A1 _425_/Q _267_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X_336_ _455_/Q _395_/Q _336_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X_405_ _405_/D _411_/RN _459_/CLK _405_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_319_ _448_/Q _437_/Q _321_/S _448_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+Xfanout19 _419_/RN _431_/RN vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_421_ _421_/D _454_/RN _421_/CLK _421_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_283_ _316_/A2 _283_/A2 _283_/A3 _284_/A2 _430_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and4_1
+X_352_ _352_/A1 _352_/A2 _398_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_335_ _335_/I _393_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_197_ _419_/Q _332_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_266_ _299_/C _266_/A2 _266_/B1 _262_/Z _424_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai22_1
+X_404_ _404_/D _411_/RN _455_/CLK _404_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_249_ _249_/A1 _251_/I1 _421_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and2_1
+X_318_ _447_/Q _436_/Q _321_/S _447_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_282_ _430_/Q _429_/Q _275_/Z _284_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X_420_ _420_/D _420_/RN _460_/CLK _420_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_351_ _351_/A1 _351_/A2 _352_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_334_ _392_/A1 _334_/A2 _393_/Q _335_/I vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X_403_ _403_/D _411_/RN _455_/CLK _403_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_265_ _423_/Q _299_/C _266_/B1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_196_ _420_/Q _246_/B2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_248_ _421_/Q _390_/A1 _243_/Z _248_/B2 _248_/C _251_/I1 vccd1 vccd1 vssd1 vssd1
++ gf180mcu_fd_sc_mcu7t5v0__oai221_1
+X_317_ _317_/I _446_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_281_ _253_/B _281_/A2 _283_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_350_ _350_/A1 _349_/Z _351_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_333_ _420_/Q _333_/A2 _422_/Q _334_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X_264_ _285_/A2 _262_/Z _423_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X_402_ _402_/D _420_/RN _460_/CLK _402_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_247_ _390_/A1 _250_/A3 _332_/B _249_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X_316_ _446_/Q _316_/A2 _326_/S _317_/I vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X_280_ _284_/B _279_/Z _429_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_332_ _332_/A1 _332_/A2 _332_/B _333_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X_263_ _267_/A1 _285_/A2 _263_/A3 _263_/A4 _266_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor4_1
+X_401_ _401_/D _420_/RN _460_/CLK _401_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_246_ _390_/A1 _243_/Z _246_/A3 _248_/C _246_/B2 _420_/D vccd1 vccd1 vssd1 vssd1
++ gf180mcu_fd_sc_mcu7t5v0__oai32_1
+X_315_ _445_/Q _315_/A2 _445_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+X_229_ _229_/I _248_/B2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+Xclkbuf_3_4__f_clk clkbuf_0_clk/Z _460_/CLK vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+X_331_ _416_/Q _415_/Q _418_/Q _417_/Q _332_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+X_400_ _400_/D _420_/RN _421_/CLK _400_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_262_ _267_/A1 _263_/A3 _263_/A4 _262_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__or3_1
+X_245_ _420_/Q _240_/Z _246_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_314_ _443_/Q _444_/Q _445_/Q _309_/S _321_/S vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and4_1
+X_228_ _228_/A1 _228_/A2 _228_/A3 _229_/I vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X_261_ _261_/A1 _293_/A1 _263_/A4 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_330_ _330_/A1 _330_/A2 _456_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_459_ _459_/D _460_/RN _459_/CLK _459_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_244_ _420_/Q _240_/Z _250_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_313_ _444_/Q _313_/A2 _444_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+X_227_ _406_/Q _405_/Q _408_/Q _407_/Q _228_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor4_1
+X_260_ _285_/A2 _424_/Q _260_/A3 _293_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X_389_ _415_/Q _235_/Z _416_/Q _390_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X_458_ _458_/D _460_/RN _459_/CLK _458_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_243_ _420_/Q _240_/Z _243_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and2_1
+X_312_ _443_/Q _444_/Q _309_/S _315_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X_226_ _404_/Q _403_/Q _228_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_209_ _431_/Q _284_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_388_ _388_/A1 _392_/B1 _390_/A1 _387_/Z _415_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai22_1
+X_457_ _457_/D _460_/RN _459_/CLK _457_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_242_ _390_/A1 _240_/Z _242_/A3 _248_/C _332_/A1 _419_/D vccd1 vccd1 vssd1 vssd1
++ gf180mcu_fd_sc_mcu7t5v0__oai32_1
+X_311_ _443_/Q _309_/S _443_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X_225_ _409_/Q _410_/Q _411_/Q _412_/Q _228_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor4_1
+X_208_ _446_/Q _302_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_387_ _388_/A1 _235_/Z _387_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X_456_ _456_/D _460_/RN _459_/CLK _456_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_310_ _443_/Q _309_/S _313_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_241_ _418_/Q _237_/Z _419_/Q _242_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X_439_ _439_/D _447_/RN _449_/CLK _439_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_224_ _205_/I _460_/Q _358_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_207_ _424_/Q _299_/C vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_386_ _390_/A1 _235_/Z _386_/A3 _392_/B1 _386_/B2 _414_/D vccd1 vccd1 vssd1 vssd1
++ gf180mcu_fd_sc_mcu7t5v0__oai32_1
+X_455_ _455_/D _460_/RN _455_/CLK _455_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_240_ _419_/Q _418_/Q _417_/Q _236_/Z _240_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and4_1
+X_438_ _438_/D _447_/RN _449_/CLK _438_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_369_ _404_/Q _403_/Q _405_/Q _223_/Z _370_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and4_1
+X_223_ _205_/I _460_/Q _223_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and2_1
+X_206_ _423_/Q _285_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+Xclkbuf_3_5__f_clk clkbuf_0_clk/Z _421_/CLK vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+X_385_ _413_/Q _414_/Q _386_/A3 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X_454_ _454_/D _454_/RN _454_/CLK _454_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_299_ _299_/A1 _298_/Z _423_/Q _299_/C _300_/B2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+X_437_ _437_/D _447_/RN _449_/CLK _437_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_368_ _404_/Q _368_/A2 _404_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+X_222_ _458_/Q _330_/A1 _327_/A2 _456_/Q _460_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai22_1
+X_205_ _205_/I _267_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_384_ _392_/B1 _390_/A1 _413_/Q _413_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_453_ _453_/D _453_/RN _454_/CLK _453_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_298_ _447_/Q _448_/Q _449_/Q _450_/Q _432_/Q _433_/Q _298_/Z vccd1 vccd1 vssd1 vssd1
++ gf180mcu_fd_sc_mcu7t5v0__mux4_1
+X_367_ _404_/Q _403_/Q _223_/Z _370_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X_436_ _436_/D _447_/RN _452_/CLK _436_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_221_ _458_/Q _459_/Q _327_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_419_ _419_/D _419_/RN _431_/CLK _419_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_204_ _401_/Q _362_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_383_ _412_/Q _383_/A2 _412_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+X_452_ _452_/D _452_/RN _452_/CLK _452_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_435_ _435_/D _452_/RN _452_/CLK _435_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+X_297_ _433_/Q _295_/Z _297_/B _434_/Q _300_/B1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai211_1
+X_366_ _403_/Q _223_/Z _403_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X_220_ _456_/Q _459_/Q _330_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_418_ _418_/D _419_/RN _421_/CLK _418_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_349_ _396_/Q _397_/Q _398_/Q _349_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__and3_1
+X_203_ _405_/Q _370_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+Xoutput4 _393_/Q apt_pass vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_382_ _411_/Q _382_/A2 _411_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+X_451_ _451_/D _452_/RN _452_/CLK _451_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_296_ _432_/Q _325_/A1 _296_/B _433_/Q _297_/B vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai211_1
+X_365_ _403_/Q _223_/Z _368_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_434_ _434_/D _452_/RN _452_/CLK _434_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_279_ _279_/A1 _275_/Z _279_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X_417_ _417_/D _419_/RN _421_/CLK _417_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_348_ _396_/Q _397_/Q _398_/Q _350_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X_202_ _415_/Q _388_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+Xclkbuf_3_0__f_clk clkbuf_0_clk/Z _455_/CLK vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+Xoutput5 _394_/Q rct_pass vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_381_ _409_/Q _410_/Q _411_/Q _374_/Z _383_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand4_1
+X_450_ _450_/D _452_/RN _452_/CLK _450_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_433_ _433_/D _454_/RN _454_/CLK _433_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_364_ _229_/I _364_/A2 _364_/B _402_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X_295_ _451_/Q _452_/Q _432_/Q _295_/Z vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X_278_ _429_/Q _275_/Z _281_/A2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_416_ _416_/D _419_/RN _421_/CLK _416_/Q vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X_347_ _398_/Q _358_/B _352_/A1 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X_201_ _416_/Q _390_/B2 vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+Xoutput6 _261_/A1 uart_busy vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_380_ _410_/Q _380_/A2 _410_/D vccd1 vccd1 vssd1 vssd1 gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+.ends
+

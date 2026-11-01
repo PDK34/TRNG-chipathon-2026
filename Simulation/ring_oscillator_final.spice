@@ -1,0 +1,794 @@
+* NGSPICE file created from ring_oscillator_final.ext - technology: gf180mcuD
+
+.subckt ring_oscillator_final VinVCO VO VDD GND
+X0 current_starved_inv_16.vi current_starved_inv_18.vo a_18210_8393# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X1 a_16160_993# current_starved_inv_2.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X2 a_20261_1959# current_starved_inv_8.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X3 a_10011_1959# current_starved_inv_2.vo current_starved_inv_3.vo VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X4 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z a_22626_3525# GND GND nfet_05v0 ad=0.2132p pd=1.34u as=0.218p ps=1.52u w=0.82u l=0.6u
+X5 a_23212_6457# a_22540_6589# VDD VDD pfet_05v0 ad=0.3172p pd=1.74u as=0.4005p ps=2.12u w=1.22u l=0.5u
+X6 current_starved_inv_4.vo current_starved_inv_3.vo a_12060_993# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X7 VDD current_starved_inv_20.vbp a_14111_9359# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X8 a_10010_993# current_starved_inv_2.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X9 a_20260_993# current_starved_inv_2.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X10 current_starved_inv_0.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 a_3860_993# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X11 a_3860_993# current_starved_inv_2.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X12 current_starved_inv_6.vi current_starved_inv_4.vo a_14110_993# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X13 gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 a_23268_9793# VDD pfet_05v0 ad=0.3172p pd=1.74u as=0.3172p ps=1.74u w=1.22u l=0.5u
+X14 a_12061_5659# current_starved_inv_14.vo current_starved_inv_13.vo VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X15 VDD current_starved_inv_2.vbp a_20261_1959# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X16 VDD biasing_0.vbpout a_16161_13059# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X17 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 current_starved_inv_21.vi a_20260_12093# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X18 VDD current_starved_inv_2.vbp a_10011_1959# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X19 a_20260_4693# biasing_2.vbnout GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X20 a_16161_13059# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 current_starved_inv_23.vo VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X21 GND gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 a_22626_3525# GND nfet_05v0 ad=0.218p pd=1.52u as=93.59999f ps=0.88u w=0.36u l=0.6u
+X22 a_10010_4693# biasing_2.vbnout GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X23 current_starved_inv_10.vi current_starved_inv_11.vi a_16160_4693# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X24 current_starved_inv_1.vo current_starved_inv_0.vo a_5910_993# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X25 a_22814_3525# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 a_22626_3525# VDD pfet_05v0 ad=0.1456p pd=1.08u as=0.2464p ps=2u w=0.56u l=0.5u
+X26 a_14111_5659# current_starved_inv_13.vo current_starved_inv_11.vi VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X27 a_12060_8393# current_starved_inv_20.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X28 VDD biasing_0.vbpout a_18211_13059# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X29 VDD current_starved_inv_20.vbp current_starved_inv_20.vbp VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X30 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 current_starved_inv_16.vi a_20260_8393# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X31 current_starved_inv_14.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 a_7960_4693# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X32 a_18211_13059# current_starved_inv_23.vo current_starved_inv_21.vi VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X33 current_starved_inv_9.vi current_starved_inv_10.vi a_18210_4693# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X34 VDD biasing_2.vbpout a_12061_5659# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X35 GND gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 a_23522_2989# GND nfet_05v0 ad=0.3608p pd=2.52u as=0.1312p ps=1.14u w=0.82u l=0.6u
+X36 a_23212_6457# gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 VO VDD pfet_05v0 ad=0.5368p pd=3.32u as=0.3172p ps=1.74u w=1.22u l=0.5u
+X37 VDD gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z a_22728_6589# VDD pfet_05v0 ad=0.4005p pd=2.12u as=0.1456p ps=1.08u w=0.56u l=0.5u
+X38 VDD biasing_2.vbpout biasing_2.vbpout VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X39 a_14110_8393# current_starved_inv_20.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X40 a_12060_993# current_starved_inv_2.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X41 a_16161_9359# current_starved_inv_18.vi current_starved_inv_18.vo VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X42 VDD biasing_2.vbpout a_14111_5659# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X43 a_12061_1959# current_starved_inv_3.vo current_starved_inv_4.vo VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X44 a_23436_6053# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z VO GND nfet_05v0 ad=0.1312p pd=1.14u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X45 VDD current_starved_inv_20.vbp a_16161_9359# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X46 VDD gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 a_22784_9925# VDD pfet_05v0 ad=0.4005p pd=2.12u as=0.1456p ps=1.08u w=0.56u l=0.5u
+X47 a_18211_9359# current_starved_inv_18.vo current_starved_inv_16.vi VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X48 a_23268_9793# a_22596_9925# VDD VDD pfet_05v0 ad=0.3172p pd=1.74u as=0.4005p ps=2.12u w=1.22u l=0.5u
+X49 VDD biasing_0.vbpout a_20261_13059# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X50 a_20261_13059# current_starved_inv_21.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X51 a_3861_1959# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 current_starved_inv_0.vo VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X52 VDD current_starved_inv_2.vbp current_starved_inv_2.vbp VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X53 a_14111_1959# current_starved_inv_4.vo current_starved_inv_6.vi VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X54 VDD current_starved_inv_20.vbp current_starved_inv_20.vbn VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X55 current_starved_inv_2.vbn current_starved_inv_2.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X56 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 a_23298_3393# VDD pfet_05v0 ad=0.3172p pd=1.74u as=0.3172p ps=1.74u w=1.22u l=0.5u
+X57 current_starved_inv_6.vo current_starved_inv_6.vi a_16160_993# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X58 VDD current_starved_inv_20.vbp a_18211_9359# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X59 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 current_starved_inv_9.vi a_20260_4693# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X60 VDD biasing_0.vbpout biasing_0.vbpout VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X61 current_starved_inv_14.vo current_starved_inv_14.vi a_10010_4693# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X62 VDD current_starved_inv_2.vbp a_12061_1959# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X63 a_12060_4693# biasing_2.vbnout GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X64 VDD biasing_2.vbpout biasing_2.vbnout VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X65 biasing_0.vbpout VinVCO GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X66 a_5911_1959# current_starved_inv_0.vo current_starved_inv_1.vo VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X67 current_starved_inv_2.vo current_starved_inv_1.vo a_7960_993# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X68 current_starved_inv_8.vi current_starved_inv_6.vo a_18210_993# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X69 VO gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z a_23212_6457# VDD pfet_05v0 ad=0.3172p pd=1.74u as=0.3172p ps=1.74u w=1.22u l=0.5u
+X70 a_18210_993# current_starved_inv_2.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X71 a_22626_3525# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 GND GND nfet_05v0 ad=93.59999f pd=0.88u as=0.1584p ps=1.6u w=0.36u l=0.6u
+X72 a_22728_6589# gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 a_22540_6589# VDD pfet_05v0 ad=0.1456p pd=1.08u as=0.2464p ps=2u w=0.56u l=0.5u
+X73 gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 a_22596_9925# GND GND nfet_05v0 ad=0.2132p pd=1.34u as=0.218p ps=1.52u w=0.82u l=0.6u
+X74 a_16161_5659# current_starved_inv_11.vi current_starved_inv_10.vi VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X75 VDD current_starved_inv_2.vbp a_3861_1959# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X76 VDD current_starved_inv_2.vbp a_14111_1959# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X77 VDD biasing_0.vbpout biasing_0.vbnout VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X78 a_14110_4693# biasing_2.vbnout GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X79 current_starved_inv_20.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 a_12060_8393# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X80 a_20261_9359# current_starved_inv_16.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X81 a_7961_5659# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 current_starved_inv_14.vi VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X82 a_18211_5659# current_starved_inv_10.vi current_starved_inv_9.vi VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X83 a_22540_6589# gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 GND GND nfet_05v0 ad=93.59999f pd=0.88u as=0.1584p ps=1.6u w=0.36u l=0.6u
+X84 VDD current_starved_inv_2.vbp a_5911_1959# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X85 a_16160_8393# current_starved_inv_20.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X86 a_16160_12093# biasing_0.vbnout GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X87 a_23268_9793# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 VDD pfet_05v0 ad=0.5368p pd=3.32u as=0.3172p ps=1.74u w=1.22u l=0.5u
+X88 a_5910_993# current_starved_inv_2.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X89 current_starved_inv_18.vi current_starved_inv_20.vo a_14110_8393# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X90 VDD biasing_2.vbpout a_16161_5659# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X91 current_starved_inv_20.vbp VinVCO GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X92 VDD current_starved_inv_20.vbp a_20261_9359# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X93 a_23492_9389# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 GND nfet_05v0 ad=0.1312p pd=1.14u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X94 VDD gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 a_22814_3525# VDD pfet_05v0 ad=0.4005p pd=2.12u as=0.1456p ps=1.08u w=0.56u l=0.5u
+X95 a_18210_8393# current_starved_inv_20.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X96 a_18210_12093# biasing_0.vbnout GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X97 biasing_2.vbpout VinVCO GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X98 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 current_starved_inv_8.vi a_20260_993# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X99 GND gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 a_23436_6053# GND nfet_05v0 ad=0.3608p pd=2.52u as=0.1312p ps=1.14u w=0.82u l=0.6u
+X100 VDD biasing_2.vbpout a_18211_5659# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X101 VDD biasing_2.vbpout a_7961_5659# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X102 current_starved_inv_3.vo current_starved_inv_2.vo a_10010_993# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X103 VO a_22540_6589# GND GND nfet_05v0 ad=0.2132p pd=1.34u as=0.218p ps=1.52u w=0.82u l=0.6u
+X104 a_16161_1959# current_starved_inv_6.vi current_starved_inv_6.vo VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X105 GND gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z a_22540_6589# GND nfet_05v0 ad=0.218p pd=1.52u as=93.59999f ps=0.88u w=0.36u l=0.6u
+X106 GND gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 a_23492_9389# GND nfet_05v0 ad=0.3608p pd=2.52u as=0.1312p ps=1.14u w=0.82u l=0.6u
+X107 current_starved_inv_13.vo current_starved_inv_14.vo a_12060_4693# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X108 a_14110_993# current_starved_inv_2.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X109 a_7961_1959# current_starved_inv_1.vo current_starved_inv_2.vo VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X110 a_20261_5659# current_starved_inv_9.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X111 a_10011_5659# current_starved_inv_14.vi current_starved_inv_14.vo VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X112 current_starved_inv_20.vbn current_starved_inv_20.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X113 a_18211_1959# current_starved_inv_6.vo current_starved_inv_8.vi VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X114 a_7960_993# current_starved_inv_2.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X115 current_starved_inv_11.vi current_starved_inv_13.vo a_14110_4693# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X116 a_20260_12093# biasing_0.vbnout GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X117 GND gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 a_22596_9925# GND nfet_05v0 ad=0.218p pd=1.52u as=93.59999f ps=0.88u w=0.36u l=0.6u
+X118 VDD current_starved_inv_2.vbp a_16161_1959# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X119 a_16160_4693# biasing_2.vbnout GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X120 biasing_2.vbnout biasing_2.vbnout GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X121 current_starved_inv_2.vbp VinVCO GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X122 a_22784_9925# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 a_22596_9925# VDD pfet_05v0 ad=0.1456p pd=1.08u as=0.2464p ps=2u w=0.56u l=0.5u
+X123 a_20260_8393# current_starved_inv_20.vbn GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X124 current_starved_inv_23.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 a_16160_12093# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X125 a_12061_9359# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 current_starved_inv_20.vo VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X126 a_23298_3393# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z VDD pfet_05v0 ad=0.5368p pd=3.32u as=0.3172p ps=1.74u w=1.22u l=0.5u
+X127 a_23522_2989# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z GND nfet_05v0 ad=0.1312p pd=1.14u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X128 VDD current_starved_inv_2.vbp a_7961_1959# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X129 a_23298_3393# a_22626_3525# VDD VDD pfet_05v0 ad=0.3172p pd=1.74u as=0.4005p ps=2.12u w=1.22u l=0.5u
+X130 VDD biasing_2.vbpout a_20261_5659# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X131 VDD current_starved_inv_2.vbp a_18211_1959# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X132 a_7960_4693# biasing_2.vbnout GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X133 VDD biasing_2.vbpout a_10011_5659# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X134 biasing_0.vbnout biasing_0.vbnout GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X135 a_18210_4693# biasing_2.vbnout GND GND nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+X136 current_starved_inv_18.vo current_starved_inv_18.vi a_16160_8393# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X137 a_22596_9925# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 GND GND nfet_05v0 ad=93.59999f pd=0.88u as=0.1584p ps=1.6u w=0.36u l=0.6u
+X138 current_starved_inv_21.vi current_starved_inv_23.vo a_18210_12093# GND nfet_03v3 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=0.84u
+X139 VDD current_starved_inv_20.vbp a_12061_9359# VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+X140 a_14111_9359# current_starved_inv_20.vo current_starved_inv_18.vi VDD pfet_03v3 ad=2.64p pd=12.88u as=2.64p ps=12.88u w=6u l=0.84u
+X141 VDD current_starved_inv_2.vbp current_starved_inv_2.vbn VDD pfet_03v3 ad=1.76p pd=8.88u as=1.76p ps=8.88u w=4u l=1u
+C0 biasing_0.vbnout a_16161_9359# 0
+C1 current_starved_inv_20.vbp a_20261_9359# 0.09012f
+C2 a_10011_5659# VDD 1.71068f
+C3 a_18211_5659# biasing_2.vbpout 0.17697f
+C4 a_12061_1959# a_14111_1959# 0
+C5 current_starved_inv_18.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0
+C6 biasing_2.vbpout a_10010_4693# 0
+C7 biasing_0.vbpout a_16160_12093# 0
+C8 a_16161_1959# current_starved_inv_2.vbp 0.17697f
+C9 biasing_0.vbnout biasing_0.vbpout 0.34443f
+C10 a_12061_9359# current_starved_inv_20.vbn 0
+C11 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 a_20261_9359# 0
+C12 current_starved_inv_4.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 0
+C13 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 current_starved_inv_9.vi 0
+C14 current_starved_inv_11.vi current_starved_inv_13.vo 0.26424f
+C15 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 4.03289f
+C16 current_starved_inv_20.vbp a_18211_9359# 0.17697f
+C17 biasing_2.vbpout a_14111_5659# 0.17697f
+C18 current_starved_inv_14.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 0.26618f
+C19 a_7960_993# current_starved_inv_2.vbn 0.12492f
+C20 a_7960_993# current_starved_inv_2.vo 0.14647f
+C21 a_16160_12093# VDD 0.00345f
+C22 biasing_0.vbnout VDD 0.99889f
+C23 a_12060_4693# VDD 0.00345f
+C24 biasing_2.vbpout a_14110_4693# 0
+C25 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 current_starved_inv_11.vi 0
+C26 a_18210_8393# current_starved_inv_16.vi 0.14647f
+C27 a_14111_9359# a_14110_8393# 0
+C28 biasing_2.vbnout VDD 1.07753f
+C29 current_starved_inv_8.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0.25165f
+C30 current_starved_inv_6.vi a_16160_993# 0.06495f
+C31 current_starved_inv_2.vbn a_20260_993# 0.05099f
+C32 biasing_0.vbnout a_20261_13059# 0
+C33 a_18211_13059# a_18210_12093# 0
+C34 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 0.32751f
+C35 a_3860_993# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0.06495f
+C36 biasing_0.vbnout VinVCO 0.01739f
+C37 a_16160_993# VDD 0.00345f
+C38 current_starved_inv_16.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0.24961f
+C39 VinVCO biasing_2.vbnout 0.01733f
+C40 current_starved_inv_1.vo current_starved_inv_0.vo 0.26424f
+C41 a_5911_1959# a_7961_1959# 0
+C42 a_18210_993# a_16160_993# 0
+C43 current_starved_inv_20.vo current_starved_inv_18.vi 0.26424f
+C44 a_20261_5659# current_starved_inv_9.vi 0.11872f
+C45 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 a_20261_5659# 0.27648f
+C46 a_10010_993# current_starved_inv_2.vbp 0
+C47 a_12060_993# a_14110_993# 0
+C48 current_starved_inv_10.vi a_16161_5659# 0.27627f
+C49 biasing_2.vbnout a_12061_1959# 0
+C50 a_14110_8393# a_16160_8393# 0
+C51 a_16161_1959# current_starved_inv_6.vi 0.11872f
+C52 current_starved_inv_2.vbp a_10011_1959# 0.17697f
+C53 a_14110_8393# VDD 0.00345f
+C54 VO a_22540_6589# 0.04115f
+C55 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 current_starved_inv_2.vbp 0.04517f
+C56 a_18211_1959# current_starved_inv_2.vbn 0
+C57 biasing_2.vbpout a_16161_5659# 0.17697f
+C58 biasing_2.vbpout a_20260_4693# 0
+C59 a_16161_1959# VDD 1.71068f
+C60 a_3861_1959# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0.12088f
+C61 current_starved_inv_1.vo current_starved_inv_2.vbn 0.08786f
+C62 a_16161_9359# current_starved_inv_18.vo 0.27627f
+C63 current_starved_inv_1.vo current_starved_inv_2.vo 0.26424f
+C64 biasing_2.vbnout a_7960_4693# 0.14009f
+C65 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 current_starved_inv_14.vo 0
+C66 biasing_2.vbnout a_20261_1959# 0
+C67 current_starved_inv_20.vbp a_14111_9359# 0.17697f
+C68 current_starved_inv_14.vi current_starved_inv_14.vo 0.26424f
+C69 current_starved_inv_8.vi current_starved_inv_2.vbp 0.08048f
+C70 current_starved_inv_10.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0
+C71 a_16160_8393# current_starved_inv_18.vo 0.14647f
+C72 current_starved_inv_14.vi a_10010_4693# 0.06495f
+C73 current_starved_inv_21.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 0.24859f
+C74 a_3860_993# current_starved_inv_2.vbp 0
+C75 current_starved_inv_18.vo VDD 1.60201f
+C76 current_starved_inv_2.vbn current_starved_inv_0.vo 0.08786f
+C77 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z a_23298_3393# 0.34517f
+C78 biasing_2.vbpout gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0.06184f
+C79 a_16161_9359# current_starved_inv_20.vbp 0.17697f
+C80 current_starved_inv_20.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0.26532f
+C81 current_starved_inv_11.vi a_14111_5659# 0.27627f
+C82 VO a_23212_6457# 0.3333f
+C83 a_5910_993# a_3860_993# 0
+C84 a_16160_12093# a_18210_12093# 0
+C85 biasing_0.vbnout a_18210_12093# 0.12492f
+C86 a_20260_8393# a_18210_8393# 0
+C87 a_10011_5659# a_12061_5659# 0
+C88 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 biasing_0.vbpout 0.08539f
+C89 VDD current_starved_inv_13.vo 1.58017f
+C90 current_starved_inv_11.vi a_14110_4693# 0.14647f
+C91 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0.23477f
+C92 a_10010_993# VDD 0.00345f
+C93 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 current_starved_inv_6.vi 0
+C94 current_starved_inv_20.vbp a_16160_8393# 0
+C95 a_20260_8393# current_starved_inv_16.vi 0.06495f
+C96 current_starved_inv_2.vo current_starved_inv_2.vbn 0.08786f
+C97 current_starved_inv_20.vbp VDD 7.94913f
+C98 current_starved_inv_2.vbp a_3861_1959# 0.1958f
+C99 a_10011_1959# VDD 1.71068f
+C100 current_starved_inv_9.vi VDD 1.7392f
+C101 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 VDD 2.57261f
+C102 current_starved_inv_3.vo current_starved_inv_2.vbn 0.08786f
+C103 a_18211_5659# a_20261_5659# 0
+C104 a_12060_993# current_starved_inv_4.vo 0.14647f
+C105 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 VDD 3.2236f
+C106 a_12061_5659# a_12060_4693# 0
+C107 a_20260_8393# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0.1491f
+C108 current_starved_inv_2.vo current_starved_inv_3.vo 0.26424f
+C109 biasing_2.vbpout current_starved_inv_10.vi 0.09359f
+C110 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 a_23268_9793# 0.10607f
+C111 biasing_2.vbnout a_16160_4693# 0.12492f
+C112 biasing_2.vbnout a_12061_5659# 0
+C113 VinVCO current_starved_inv_20.vbp 0.22508f
+C114 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 1.01129f
+C115 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 a_22784_9925# 0.00842f
+C116 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 a_20261_13059# 0.27627f
+C117 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 a_23492_9389# 0
+C118 current_starved_inv_2.vbn a_14111_1959# 0
+C119 current_starved_inv_8.vi VDD 1.73798f
+C120 biasing_2.vbnout a_18211_1959# 0
+C121 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 a_20260_4693# 0
+C122 current_starved_inv_21.vi current_starved_inv_23.vo 0.26424f
+C123 a_3860_993# VDD 0.00345f
+C124 current_starved_inv_8.vi a_18210_993# 0.14647f
+C125 a_12061_1959# a_10011_1959# 0
+C126 current_starved_inv_11.vi a_16161_5659# 0.11872f
+C127 a_18210_4693# VDD 0.01432f
+C128 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 a_22626_3525# 0.44658f
+C129 gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 a_23436_6053# 0
+C130 a_20261_9359# current_starved_inv_16.vi 0.11872f
+C131 a_18211_9359# a_18210_8393# 0
+C132 a_20260_8393# biasing_2.vbpout 0
+C133 a_12060_8393# VDD 0.00345f
+C134 a_20261_9359# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0.27652f
+C135 a_18211_9359# current_starved_inv_16.vi 0.27627f
+C136 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 a_7960_4693# 0.06689f
+C137 current_starved_inv_23.vo biasing_0.vbpout 0.09359f
+C138 current_starved_inv_20.vbn a_14110_8393# 0.12492f
+C139 current_starved_inv_14.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0
+C140 current_starved_inv_2.vbp a_7961_1959# 0.17697f
+C141 a_12060_993# current_starved_inv_2.vbp 0
+C142 biasing_2.vbpout a_7961_5659# 0.19396f
+C143 a_7960_993# a_10010_993# 0
+C144 a_3861_1959# VDD 1.70796f
+C145 a_16161_1959# a_18211_1959# 0
+C146 current_starved_inv_11.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0
+C147 current_starved_inv_23.vo VDD 1.60207f
+C148 biasing_0.vbnout a_18211_13059# 0
+C149 a_20261_5659# a_20260_4693# 0
+C150 VDD current_starved_inv_14.vo 1.58017f
+C151 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 a_22814_3525# 0.00647f
+C152 a_20261_1959# current_starved_inv_8.vi 0.11872f
+C153 a_18211_5659# VDD 1.72919f
+C154 gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0.3692f
+C155 a_10010_4693# VDD 0.00345f
+C156 a_14111_9359# current_starved_inv_18.vi 0.27627f
+C157 current_starved_inv_2.vbp a_20260_4693# 0
+C158 current_starved_inv_20.vbn current_starved_inv_18.vo 0.08786f
+C159 a_14111_5659# VDD 1.71068f
+C160 current_starved_inv_10.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0
+C161 current_starved_inv_2.vbn a_16160_993# 0.12492f
+C162 a_16161_13059# biasing_0.vbpout 0.1946f
+C163 a_14110_4693# VDD 0.00345f
+C164 a_12061_5659# current_starved_inv_13.vo 0.27627f
+C165 current_starved_inv_14.vi biasing_2.vbpout 0.09363f
+C166 current_starved_inv_11.vi current_starved_inv_10.vi 0.26424f
+C167 a_16161_9359# current_starved_inv_18.vi 0.11872f
+C168 current_starved_inv_4.vo a_14110_993# 0.06495f
+C169 biasing_2.vbnout a_14111_1959# 0
+C170 a_16161_13059# VDD 1.70877f
+C171 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z VDD 0.75898f
+C172 biasing_2.vbpout current_starved_inv_11.vi 0.09359f
+C173 current_starved_inv_8.vi a_20260_993# 0.06495f
+C174 current_starved_inv_20.vbp current_starved_inv_20.vbn 0.34325f
+C175 current_starved_inv_20.vbp a_12061_9359# 0.19313f
+C176 a_16161_1959# current_starved_inv_2.vbn 0
+C177 current_starved_inv_18.vi a_16160_8393# 0.06495f
+C178 current_starved_inv_18.vi VDD 1.58017f
+C179 biasing_2.vbpout gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 0.0014f
+C180 a_7961_1959# VDD 1.71068f
+C181 current_starved_inv_6.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0
+C182 a_12060_993# VDD 0.00345f
+C183 a_20260_8393# a_20261_9359# 0
+C184 current_starved_inv_1.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 0
+C185 a_7960_4693# a_10010_4693# 0
+C186 a_23522_2989# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 0
+C187 a_10011_5659# biasing_2.vbnout 0
+C188 a_16161_5659# VDD 1.71068f
+C189 current_starved_inv_8.vi a_18211_1959# 0.27627f
+C190 biasing_2.vbpout a_20261_5659# 0.09012f
+C191 biasing_0.vbnout a_16160_12093# 0.13987f
+C192 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z a_22626_3525# 0.04486f
+C193 current_starved_inv_21.vi a_20260_12093# 0.06495f
+C194 a_16161_1959# a_14111_1959# 0
+C195 a_20260_4693# VDD 0.02367f
+C196 a_18210_4693# a_16160_4693# 0
+C197 current_starved_inv_14.vi a_7961_5659# 0.27627f
+C198 a_16160_8393# a_18210_8393# 0
+C199 a_18210_8393# VDD 0.01432f
+C200 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 current_starved_inv_0.vo 0
+C201 biasing_2.vbnout a_12060_4693# 0.12492f
+C202 a_12060_993# a_12061_1959# 0
+C203 a_5911_1959# current_starved_inv_2.vbp 0.17697f
+C204 current_starved_inv_23.vo a_18210_12093# 0.06495f
+C205 a_23298_3393# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0.01895f
+C206 a_14110_993# current_starved_inv_2.vbp 0
+C207 current_starved_inv_16.vi VDD 1.7391f
+C208 a_12060_8393# current_starved_inv_20.vbn 0.13437f
+C209 a_10010_993# current_starved_inv_2.vbn 0.12492f
+C210 biasing_0.vbpout a_20260_12093# 0
+C211 current_starved_inv_2.vo a_10010_993# 0.06495f
+C212 a_12060_8393# a_12061_9359# 0
+C213 a_5910_993# a_5911_1959# 0
+C214 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 VDD 3.22723f
+C215 current_starved_inv_2.vbn a_10011_1959# 0
+C216 current_starved_inv_2.vbp current_starved_inv_6.vo 0.09359f
+C217 a_22596_9925# current_starved_inv_20.vbp 0
+C218 current_starved_inv_2.vo a_10011_1959# 0.11872f
+C219 current_starved_inv_3.vo a_10010_993# 0.14647f
+C220 current_starved_inv_4.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0
+C221 current_starved_inv_2.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 0
+C222 a_23268_9793# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0.01895f
+C223 a_3860_993# current_starved_inv_0.vo 0.14647f
+C224 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z a_22814_3525# 0
+C225 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z a_22540_6589# 0.39409f
+C226 current_starved_inv_20.vo a_14111_9359# 0.11872f
+C227 a_18211_9359# a_20261_9359# 0
+C228 a_20260_12093# VDD 0.02367f
+C229 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 a_22596_9925# 0.42179f
+C230 current_starved_inv_14.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0
+C231 a_12061_5659# current_starved_inv_14.vo 0.11872f
+C232 current_starved_inv_3.vo a_10011_1959# 0.27627f
+C233 a_22784_9925# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0
+C234 current_starved_inv_3.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 0
+C235 a_23492_9389# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0
+C236 a_7960_993# a_7961_1959# 0
+C237 current_starved_inv_11.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0
+C238 a_18211_5659# current_starved_inv_20.vbn 0
+C239 a_20261_13059# a_20260_12093# 0
+C240 current_starved_inv_8.vi current_starved_inv_2.vbn 0.08269f
+C241 a_12061_5659# a_14111_5659# 0
+C242 biasing_2.vbnout a_16161_1959# 0
+C243 a_22540_6589# a_23436_6053# 0
+C244 current_starved_inv_20.vbn a_14111_5659# 0
+C245 a_3860_993# current_starved_inv_2.vbn 0.14192f
+C246 a_14110_4693# a_16160_4693# 0
+C247 current_starved_inv_10.vi VDD 1.60201f
+C248 current_starved_inv_0.vo a_3861_1959# 0.27627f
+C249 a_16161_1959# a_16160_993# 0
+C250 a_14110_993# current_starved_inv_6.vi 0.14647f
+C251 biasing_2.vbpout VDD 10.1337f
+C252 a_5911_1959# VDD 1.71068f
+C253 current_starved_inv_20.vo VDD 1.58017f
+C254 a_14110_993# VDD 0.00345f
+C255 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z a_23212_6457# 0.03147f
+C256 current_starved_inv_6.vi current_starved_inv_6.vo 0.26424f
+C257 current_starved_inv_4.vo current_starved_inv_2.vbp 0.09359f
+C258 VinVCO biasing_2.vbpout 0.20589f
+C259 current_starved_inv_2.vbp gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0.36481f
+C260 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z a_23522_2989# 0.00863f
+C261 current_starved_inv_2.vbn a_3861_1959# 0
+C262 current_starved_inv_20.vbn current_starved_inv_18.vi 0.08786f
+C263 current_starved_inv_23.vo a_18211_13059# 0.11872f
+C264 a_12060_4693# current_starved_inv_13.vo 0.14647f
+C265 current_starved_inv_6.vo VDD 1.60201f
+C266 biasing_0.vbnout current_starved_inv_20.vbp 0.16445f
+C267 current_starved_inv_1.vo a_7961_1959# 0.11872f
+C268 biasing_2.vbnout current_starved_inv_13.vo 0.08786f
+C269 a_20260_8393# VDD 0.02367f
+C270 gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 a_20261_5659# 0
+C271 a_18210_993# current_starved_inv_6.vo 0.06495f
+C272 a_16161_5659# a_16160_4693# 0
+C273 biasing_0.vbnout gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 0.23524f
+C274 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 a_16160_12093# 0.06691f
+C275 current_starved_inv_20.vbn a_16161_5659# 0
+C276 biasing_2.vbnout a_10011_1959# 0
+C277 biasing_2.vbnout current_starved_inv_9.vi 0.08269f
+C278 biasing_2.vbnout gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 0.34698f
+C279 a_7961_5659# VDD 1.70796f
+C280 biasing_2.vbpout a_7960_4693# 0
+C281 current_starved_inv_20.vbn a_18210_8393# 0.12492f
+C282 a_18210_12093# a_20260_12093# 0
+C283 current_starved_inv_20.vbn current_starved_inv_16.vi 0.08269f
+C284 a_23298_3393# VDD 0.60375f
+C285 a_16161_13059# a_18211_13059# 0
+C286 a_16161_9359# a_18211_9359# 0
+C287 current_starved_inv_4.vo current_starved_inv_6.vi 0.26424f
+C288 current_starved_inv_20.vbn gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0.31947f
+C289 biasing_2.vbpout a_22540_6589# 0
+C290 current_starved_inv_6.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0
+C291 current_starved_inv_20.vbp a_14110_8393# 0
+C292 a_12061_9359# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0.11872f
+C293 a_20261_9359# VDD 1.73709f
+C294 biasing_2.vbnout a_18210_4693# 0.12492f
+C295 current_starved_inv_2.vbn a_7961_1959# 0
+C296 current_starved_inv_4.vo VDD 1.58017f
+C297 current_starved_inv_2.vo a_7961_1959# 0.27627f
+C298 a_12060_993# current_starved_inv_2.vbn 0.12492f
+C299 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 VDD 5.79184f
+C300 current_starved_inv_14.vi VDD 1.58017f
+C301 a_10011_5659# current_starved_inv_14.vo 0.27627f
+C302 a_18211_9359# VDD 1.72919f
+C303 a_5910_993# current_starved_inv_2.vbp 0
+C304 a_12060_993# current_starved_inv_3.vo 0.06495f
+C305 current_starved_inv_11.vi VDD 1.58017f
+C306 a_7961_5659# a_7960_4693# 0
+C307 a_10011_5659# a_10010_4693# 0
+C308 a_23298_3393# a_22626_3525# 0.00488f
+C309 current_starved_inv_23.vo a_16160_12093# 0.14647f
+C310 biasing_0.vbnout current_starved_inv_23.vo 0.08786f
+C311 current_starved_inv_10.vi a_16160_4693# 0.14647f
+C312 VinVCO gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0.00479f
+C313 current_starved_inv_20.vbp current_starved_inv_18.vo 0.09359f
+C314 gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 VDD 1.21301f
+C315 a_12060_4693# current_starved_inv_14.vo 0.06495f
+C316 biasing_2.vbpout a_16160_4693# 0
+C317 biasing_2.vbpout a_12061_5659# 0.17697f
+C318 current_starved_inv_4.vo a_12061_1959# 0.27627f
+C319 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 current_starved_inv_18.vo 0
+C320 a_23268_9793# gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 0.32298f
+C321 VO gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z 0.31384f
+C322 a_12060_4693# a_10010_4693# 0
+C323 biasing_2.vbpout current_starved_inv_20.vbn 0.28541f
+C324 biasing_2.vbnout current_starved_inv_14.vo 0.08786f
+C325 a_22626_3525# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0.42059f
+C326 biasing_2.vbnout a_18211_5659# 0
+C327 biasing_2.vbnout a_10010_4693# 0.12492f
+C328 gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 a_23492_9389# 0.01053f
+C329 current_starved_inv_20.vo current_starved_inv_20.vbn 0.08786f
+C330 current_starved_inv_20.vo a_12061_9359# 0.27627f
+C331 a_12060_8393# a_14110_8393# 0
+C332 a_20261_5659# VDD 1.73709f
+C333 current_starved_inv_1.vo a_5911_1959# 0.27627f
+C334 current_starved_inv_6.vi current_starved_inv_2.vbp 0.09359f
+C335 biasing_2.vbnout a_14111_5659# 0
+C336 a_14110_4693# a_12060_4693# 0
+C337 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 current_starved_inv_13.vo 0
+C338 a_10010_993# a_10011_1959# 0
+C339 current_starved_inv_14.vi a_7960_4693# 0.14647f
+C340 a_20261_1959# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0.27845f
+C341 a_22596_9925# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0.43759f
+C342 current_starved_inv_2.vbp VDD 12.3105f
+C343 VO a_23436_6053# 0.00863f
+C344 biasing_2.vbnout a_14110_4693# 0.12492f
+C345 a_16161_13059# biasing_0.vbnout 0
+C346 a_16161_9359# a_14111_9359# 0
+C347 a_16161_13059# a_16160_12093# 0
+C348 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 current_starved_inv_20.vbp 0.03674f
+C349 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 current_starved_inv_9.vi 0.25187f
+C350 a_18211_1959# current_starved_inv_6.vo 0.11872f
+C351 a_18210_993# current_starved_inv_2.vbp 0
+C352 current_starved_inv_21.vi biasing_0.vbpout 0.08048f
+C353 a_20260_8393# current_starved_inv_20.vbn 0.05099f
+C354 a_5911_1959# current_starved_inv_0.vo 0.11872f
+C355 a_5910_993# VDD 0.00345f
+C356 VinVCO current_starved_inv_2.vbp 0.24499f
+C357 a_14111_9359# VDD 1.71068f
+C358 current_starved_inv_21.vi VDD 1.74354f
+C359 biasing_2.vbnout a_7961_1959# 0
+C360 current_starved_inv_8.vi gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 0
+C361 a_22728_6589# gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 0.00858f
+C362 a_12061_1959# current_starved_inv_2.vbp 0.17697f
+C363 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 a_20260_993# 0.14647f
+C364 current_starved_inv_21.vi a_20261_13059# 0.11872f
+C365 current_starved_inv_2.vbn a_5911_1959# 0
+C366 a_16161_9359# a_16160_8393# 0
+C367 a_18210_4693# current_starved_inv_9.vi 0.14647f
+C368 gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 a_22540_6589# 0.42893f
+C369 a_16161_9359# VDD 1.71068f
+C370 a_14110_993# current_starved_inv_2.vbn 0.12492f
+C371 biasing_2.vbnout a_16161_5659# 0
+C372 a_12060_8393# current_starved_inv_20.vbp 0
+C373 biasing_0.vbpout VDD 5.77292f
+C374 biasing_2.vbnout a_20260_4693# 0.05099f
+C375 a_20261_1959# current_starved_inv_2.vbp 0.09012f
+C376 current_starved_inv_6.vi VDD 1.58017f
+C377 current_starved_inv_20.vbn a_20261_9359# 0
+C378 a_16160_8393# VDD 0.00345f
+C379 current_starved_inv_2.vbn current_starved_inv_6.vo 0.08786f
+C380 a_14110_8393# current_starved_inv_18.vi 0.14647f
+C381 biasing_0.vbpout a_20261_13059# 0.09012f
+C382 current_starved_inv_14.vo current_starved_inv_13.vo 0.26424f
+C383 current_starved_inv_11.vi a_16160_4693# 0.06495f
+C384 biasing_0.vbpout VinVCO 0.16569f
+C385 current_starved_inv_20.vbn a_18211_9359# 0
+C386 a_7960_993# current_starved_inv_2.vbp 0
+C387 a_23268_9793# VDD 0.61775f
+C388 current_starved_inv_1.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0
+C389 a_18210_993# VDD 0.01432f
+C390 a_14110_993# a_14111_1959# 0
+C391 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 current_starved_inv_23.vo 0.26546f
+C392 a_23522_2989# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0
+C393 a_22784_9925# VDD 0.01013f
+C394 a_20261_13059# VDD 1.74275f
+C395 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 current_starved_inv_14.vo 0
+C396 biasing_0.vbnout a_20260_12093# 0.05099f
+C397 a_18211_5659# current_starved_inv_9.vi 0.27627f
+C398 a_23492_9389# VDD 0
+C399 a_14111_5659# current_starved_inv_13.vo 0.11872f
+C400 VinVCO VDD 0.41427f
+C401 a_5910_993# a_7960_993# 0
+C402 gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 a_23212_6457# 0.10608f
+C403 current_starved_inv_2.vbp a_20260_993# 0
+C404 a_14110_4693# current_starved_inv_13.vo 0.06495f
+C405 current_starved_inv_18.vi current_starved_inv_18.vo 0.26424f
+C406 a_10011_5659# biasing_2.vbpout 0.17697f
+C407 a_12061_1959# VDD 1.71068f
+C408 a_3860_993# a_3861_1959# 0
+C409 current_starved_inv_0.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0.26586f
+C410 a_22626_3525# VDD 0.27685f
+C411 current_starved_inv_20.vbn a_20261_5659# 0
+C412 a_7960_4693# VDD 0.00345f
+C413 a_16161_13059# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 0.11872f
+C414 biasing_2.vbnout current_starved_inv_10.vi 0.08786f
+C415 biasing_2.vbpout a_12060_4693# 0
+C416 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 0.31804f
+C417 current_starved_inv_21.vi a_18210_12093# 0.14647f
+C418 a_18211_5659# a_18210_4693# 0
+C419 a_20261_1959# VDD 1.73668f
+C420 a_12060_993# a_10010_993# 0
+C421 current_starved_inv_4.vo current_starved_inv_2.vbn 0.08786f
+C422 current_starved_inv_2.vbn gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0.09361f
+C423 a_18211_1959# current_starved_inv_2.vbp 0.17697f
+C424 biasing_2.vbnout biasing_2.vbpout 0.34381f
+C425 current_starved_inv_20.vbp current_starved_inv_18.vi 0.09359f
+C426 current_starved_inv_18.vo a_18210_8393# 0.06495f
+C427 a_22728_6589# VDD 0.00993f
+C428 current_starved_inv_2.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0
+C429 a_10011_1959# a_7961_1959# 0
+C430 current_starved_inv_1.vo current_starved_inv_2.vbp 0.09359f
+C431 current_starved_inv_4.vo current_starved_inv_3.vo 0.26424f
+C432 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 current_starved_inv_18.vi 0
+C433 current_starved_inv_3.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0
+C434 current_starved_inv_18.vo current_starved_inv_16.vi 0.26424f
+C435 a_7960_993# VDD 0.00345f
+C436 a_22814_3525# VDD 0.01039f
+C437 a_22540_6589# VDD 0.32327f
+C438 a_14111_9359# current_starved_inv_20.vbn 0
+C439 biasing_0.vbpout a_18210_12093# 0
+C440 a_10011_5659# a_7961_5659# 0
+C441 a_14110_993# a_16160_993# 0
+C442 current_starved_inv_18.vo gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0
+C443 a_5910_993# current_starved_inv_1.vo 0.14647f
+C444 a_12061_9359# a_14111_9359# 0
+C445 current_starved_inv_4.vo a_14111_1959# 0.11872f
+C446 a_20260_4693# current_starved_inv_9.vi 0.06495f
+C447 a_22596_9925# gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 0.04968f
+C448 current_starved_inv_2.vbp current_starved_inv_0.vo 0.09359f
+C449 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 a_20260_4693# 0.16759f
+C450 current_starved_inv_20.vbp a_18210_8393# 0
+C451 VDD a_20260_993# 0.01781f
+C452 a_18210_12093# VDD 0.01432f
+C453 a_10010_4693# current_starved_inv_14.vo 0.14647f
+C454 a_16160_993# current_starved_inv_6.vo 0.14647f
+C455 a_16161_9359# current_starved_inv_20.vbn 0
+C456 a_18210_993# a_20260_993# 0
+C457 current_starved_inv_20.vbp current_starved_inv_16.vi 0.08048f
+C458 current_starved_inv_20.vo a_14110_8393# 0.06495f
+C459 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 current_starved_inv_13.vo 0
+C460 a_5910_993# current_starved_inv_0.vo 0.06495f
+C461 biasing_2.vbnout a_7961_5659# 0
+C462 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 current_starved_inv_16.vi 0
+C463 a_22814_3525# a_22626_3525# 0.00257f
+C464 current_starved_inv_20.vbp gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0.05976f
+C465 a_16160_4693# VDD 0.00345f
+C466 current_starved_inv_2.vbn current_starved_inv_2.vbp 0.34545f
+C467 a_12061_5659# VDD 1.71068f
+C468 a_16161_13059# current_starved_inv_23.vo 0.27627f
+C469 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 current_starved_inv_9.vi 0
+C470 current_starved_inv_2.vo current_starved_inv_2.vbp 0.09359f
+C471 current_starved_inv_20.vbn a_16160_8393# 0.12492f
+C472 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0.96924f
+C473 current_starved_inv_20.vbn VDD 1.03867f
+C474 current_starved_inv_14.vi a_10011_5659# 0.11872f
+C475 a_23212_6457# VDD 0.60668f
+C476 current_starved_inv_20.vbp a_20260_12093# 0
+C477 a_18211_1959# VDD 1.72919f
+C478 a_12061_9359# VDD 1.70796f
+C479 current_starved_inv_3.vo current_starved_inv_2.vbp 0.09359f
+C480 a_20260_4693# a_18210_4693# 0
+C481 a_14111_5659# a_14110_4693# 0
+C482 a_16161_1959# current_starved_inv_6.vo 0.27627f
+C483 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 a_20260_12093# 0.1489f
+C484 current_starved_inv_1.vo VDD 1.58017f
+C485 biasing_0.vbnout a_20261_9359# 0
+C486 a_5910_993# current_starved_inv_2.vbn 0.12492f
+C487 VO gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 0.3026f
+C488 a_18211_1959# a_18210_993# 0
+C489 a_22728_6589# a_22540_6589# 0.00257f
+C490 VinVCO current_starved_inv_20.vbn 0.01737f
+C491 current_starved_inv_21.vi a_18211_13059# 0.27627f
+C492 current_starved_inv_2.vbp a_14111_1959# 0.17697f
+C493 biasing_0.vbnout a_18211_9359# 0
+C494 biasing_2.vbnout gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 0.0556f
+C495 a_20261_1959# a_20260_993# 0
+C496 current_starved_inv_14.vi biasing_2.vbnout 0.08786f
+C497 biasing_2.vbpout current_starved_inv_13.vo 0.09359f
+C498 current_starved_inv_10.vi current_starved_inv_9.vi 0.26424f
+C499 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 current_starved_inv_10.vi 0
+C500 current_starved_inv_0.vo VDD 1.58017f
+C501 biasing_2.vbnout current_starved_inv_11.vi 0.08786f
+C502 biasing_2.vbpout current_starved_inv_9.vi 0.08048f
+C503 a_18211_5659# a_16161_5659# 0
+C504 biasing_2.vbpout gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 0.05913f
+C505 current_starved_inv_20.vo current_starved_inv_20.vbp 0.09361f
+C506 biasing_0.vbpout a_18211_13059# 0.17697f
+C507 a_12060_8393# gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 0.06669f
+C508 a_23522_2989# a_22626_3525# 0
+C509 current_starved_inv_6.vi current_starved_inv_2.vbn 0.08786f
+C510 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 current_starved_inv_20.vo 0
+C511 a_14111_5659# a_16161_5659# 0
+C512 a_20261_1959# a_18211_1959# 0
+C513 a_18211_13059# VDD 1.72919f
+C514 current_starved_inv_2.vbn VDD 0.94722f
+C515 current_starved_inv_2.vo VDD 1.58017f
+C516 a_22596_9925# VDD 0.30874f
+C517 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z a_23436_6053# 0.0025f
+C518 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 current_starved_inv_6.vo 0
+C519 current_starved_inv_10.vi a_18210_4693# 0.06495f
+C520 a_18210_993# current_starved_inv_2.vbn 0.12492f
+C521 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 current_starved_inv_14.vo 0
+C522 current_starved_inv_3.vo VDD 1.58017f
+C523 a_23268_9793# a_22596_9925# 0.00488f
+C524 a_20260_8393# current_starved_inv_20.vbp 0
+C525 biasing_2.vbnout a_20261_5659# 0
+C526 a_18211_13059# a_20261_13059# 0
+C527 a_22540_6589# a_23212_6457# 0.00488f
+C528 biasing_2.vbpout a_18210_4693# 0
+C529 current_starved_inv_6.vi a_14111_1959# 0.27627f
+C530 VinVCO current_starved_inv_2.vbn 0.01757f
+C531 a_22596_9925# a_22784_9925# 0.00257f
+C532 biasing_2.vbnout current_starved_inv_2.vbp 0.39852f
+C533 current_starved_inv_1.vo a_7960_993# 0.06495f
+C534 a_22596_9925# a_23492_9389# 0
+C535 a_14111_1959# VDD 1.71068f
+C536 current_starved_inv_8.vi current_starved_inv_6.vo 0.26424f
+C537 a_7961_5659# gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 0.11872f
+C538 current_starved_inv_2.vbn a_12061_1959# 0
+C539 current_starved_inv_2.vbp a_16160_993# 0
+C540 a_12060_8393# current_starved_inv_20.vo 0.14647f
+C541 current_starved_inv_21.vi biasing_0.vbnout 0.08269f
+C542 a_18211_9359# current_starved_inv_18.vo 0.11872f
+C543 current_starved_inv_3.vo a_12061_1959# 0.11872f
+C544 a_5911_1959# a_3861_1959# 0
+C545 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 a_23298_3393# 0.10316f
+C546 VO VDD 0.11303f
+C547 a_18211_5659# current_starved_inv_10.vi 0.11872f
+C548 current_starved_inv_20.vbn a_12061_5659# 0
+C549 a_20261_1959# current_starved_inv_2.vbn 0
+C550 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 current_starved_inv_13.vo 0
+C551 biasing_2.vbpout current_starved_inv_14.vo 0.09359f
+C552 VO GND 0.63972f
+C553 VinVCO GND 12.6118f
+C554 VDD GND 0.21251p
+C555 a_20260_993# GND 1.09692f
+C556 a_18210_993# GND 1.07689f
+C557 a_16160_993# GND 1.08639f
+C558 a_14110_993# GND 1.06794f
+C559 a_12060_993# GND 1.06794f
+C560 a_10010_993# GND 1.06794f
+C561 a_7960_993# GND 1.06794f
+C562 a_5910_993# GND 1.06794f
+C563 a_3860_993# GND 1.0454f
+C564 current_starved_inv_8.vi GND 1.52129f
+C565 current_starved_inv_6.vo GND 1.65857f
+C566 current_starved_inv_6.vi GND 1.54576f
+C567 current_starved_inv_4.vo GND 1.50725f
+C568 current_starved_inv_3.vo GND 1.50725f
+C569 current_starved_inv_2.vo GND 1.50725f
+C570 current_starved_inv_1.vo GND 1.50725f
+C571 current_starved_inv_0.vo GND 1.50725f
+C572 current_starved_inv_2.vbn GND 14.4862f
+C573 a_20261_1959# GND 0.10385f
+C574 a_23522_2989# GND 0.00608f
+C575 a_18211_1959# GND 0.11495f
+C576 a_16161_1959# GND 0.14017f
+C577 a_14111_1959# GND 0.10423f
+C578 a_12061_1959# GND 0.10423f
+C579 a_10011_1959# GND 0.10423f
+C580 a_7961_1959# GND 0.10423f
+C581 a_5911_1959# GND 0.10423f
+C582 a_3861_1959# GND 0.07973f
+C583 current_starved_inv_2.vbp GND 4.19875f
+C584 a_23298_3393# GND 0.01773f
+C585 a_22814_3525# GND 0
+C586 a_22626_3525# GND 0.69594f
+C587 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A1 GND 10.3637f
+C588 a_20260_4693# GND 1.05473f
+C589 a_18210_4693# GND 1.07689f
+C590 a_16160_4693# GND 1.08639f
+C591 a_14110_4693# GND 1.06794f
+C592 a_12060_4693# GND 1.06794f
+C593 a_10010_4693# GND 1.06794f
+C594 a_7960_4693# GND 1.04417f
+C595 current_starved_inv_9.vi GND 1.51854f
+C596 current_starved_inv_10.vi GND 1.65857f
+C597 current_starved_inv_11.vi GND 1.54578f
+C598 current_starved_inv_13.vo GND 1.50725f
+C599 current_starved_inv_14.vo GND 1.50725f
+C600 current_starved_inv_14.vi GND 1.50725f
+C601 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.A2 GND 10.7137f
+C602 biasing_2.vbnout GND 10.6597f
+C603 a_23436_6053# GND 0.00709f
+C604 a_23212_6457# GND 0.01768f
+C605 a_20261_5659# GND 0.1071f
+C606 a_22540_6589# GND 0.68808f
+C607 gf180mcu_fd_sc_mcu7t5v0__xor2_1_1.Z GND 2.22379f
+C608 a_18211_5659# GND 0.11495f
+C609 a_16161_5659# GND 0.14017f
+C610 a_14111_5659# GND 0.10423f
+C611 a_12061_5659# GND 0.10423f
+C612 a_10011_5659# GND 0.10423f
+C613 a_7961_5659# GND 0.08532f
+C614 biasing_2.vbpout GND 3.82364f
+C615 a_20260_8393# GND 1.08135f
+C616 a_18210_8393# GND 1.07689f
+C617 a_16160_8393# GND 1.08639f
+C618 a_14110_8393# GND 1.06794f
+C619 a_12060_8393# GND 1.05213f
+C620 a_23492_9389# GND 0.00526f
+C621 gf180mcu_fd_sc_mcu7t5v0__xor2_1_2.A2 GND 2.36042f
+C622 a_23268_9793# GND 0.00718f
+C623 current_starved_inv_16.vi GND 1.51886f
+C624 current_starved_inv_18.vo GND 1.65857f
+C625 current_starved_inv_18.vi GND 1.54578f
+C626 current_starved_inv_20.vo GND 1.50725f
+C627 current_starved_inv_20.vbn GND 8.11543f
+C628 a_22596_9925# GND 0.68372f
+C629 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A1 GND 10.0766f
+C630 a_20261_9359# GND 0.1071f
+C631 a_18211_9359# GND 0.11495f
+C632 a_16161_9359# GND 0.14017f
+C633 a_14111_9359# GND 0.10423f
+C634 a_12061_9359# GND 0.08622f
+C635 current_starved_inv_20.vbp GND 3.20342f
+C636 a_20260_12093# GND 1.08178f
+C637 a_18210_12093# GND 1.07689f
+C638 a_16160_12093# GND 1.06275f
+C639 current_starved_inv_21.vi GND 1.51853f
+C640 current_starved_inv_23.vo GND 1.65857f
+C641 gf180mcu_fd_sc_mcu7t5v0__xor2_1_0.A2 GND 8.54386f
+C642 biasing_0.vbnout GND 5.36586f
+C643 a_20261_13059# GND 0.10685f
+C644 a_18211_13059# GND 0.11495f
+C645 a_16161_13059# GND 0.12057f
+C646 biasing_0.vbpout GND 2.67273f
+.ends
+
