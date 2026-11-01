@@ -60,6 +60,19 @@
     "u_trng_core.u_digital VDD GND vccd1 vssd1",
     "u_trng_core.u_analog VDD GND VDD GND"
     ],
+
+    "PDN_CFG": "dir::scripts/pdn_bridge.tcl",
+    "FP_TEMPLATE_COPY_POWER_PINS": true,
+    "PDN_CORE_RING": true,
+    "FP_TEMPLATE_MATCH_MODE": "permissive",
+    "meta": {
+        "flow": "Classic",
+        "substituting_steps": {
+            "-OpenROAD.GeneratePDN": "Odb.ApplyDEFTemplate"
+        }
+    },
+    "PDN_ENABLE_PINS": false,
+
     "RUN_IRDROP_REPORT": false,
     "PDN_ENABLE_RAILS": true,
     "PDN_VOFFSET": 5,
@@ -72,7 +85,7 @@
     "GPL_CELL_PADDING": 4,
     "DPL_CELL_PADDING": 4,
     "DRT_OPT_DISABLE_VIA_GEN": true,
-    "FP_DEF_TEMPLATE" : "dir::def/A53_D_fixed.def",
+    "FP_DEF_TEMPLATE" : "dir::def/A53_D_fixed_1.def",
     "RSZ_DONT_TOUCH_LIST": ["vin_vco", "analog_raw_out"],
     "MAGIC_ZEROIZE_ORIGIN": false,
     "PNR_SDC_FILE": "dir::A53_chip_top.sdc",

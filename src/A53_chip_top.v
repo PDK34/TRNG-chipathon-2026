@@ -1,8 +1,12 @@
 `default_nettype none
 
 module A53_chip_top (
-  
 
+    `ifdef USE_POWER_PINS
+    inout wire VDD,
+    inout wire GND,
+    `endif
+  
     // ----------------------------------------------------
     // Input Pins (Pad pull-up/pull-down control)
     // ----------------------------------------------------
@@ -104,8 +108,10 @@ module A53_chip_top (
     // 4. Instantiate Inner Core (A53_trng_top)
     // ====================================================
     A53_trng_top u_trng_core (
-        //.VDD(VDD),
-        //.GND(GND),
+        `ifdef USE_POWER_PINS
+        .VDD(VDD),
+        .GND(GND),
+        `endif
         .clk(clk),
         .rst_n(rst_n),
         .test_mode_en(test_mode_en),

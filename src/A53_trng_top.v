@@ -1,4 +1,9 @@
 module A53_trng_top (
+
+    `ifdef USE_POWER_PINS
+    inout wire VDD,
+    inout wire GND,
+    `endif
  
     input  wire clk,
     input  wire rst_n,
@@ -22,16 +27,20 @@ module A53_trng_top (
 
     //Analog Macro Instance
     ring_oscillator_final u_analog (
-       // .VDD(VDD),
-       // .GND(GND),
+        `ifdef USE_POWER_PINS
+        .VDD(VDD),
+        .GND(GND),
+        `endif
         .VinVCO(vin_vco),
         .VO(raw_trng_sig)
     );
 
     // Digital Core Instance
     trng_top u_digital (
-        //.vccd1(VDD),      
-        //.vssd1(GND),
+        `ifdef USE_POWER_PINS
+        .vccd1(VDD),
+        .vssd1(GND),
+        `endif
         .clk(clk),
         .rst_n(rst_n),
         .enable(test_mode_en),
