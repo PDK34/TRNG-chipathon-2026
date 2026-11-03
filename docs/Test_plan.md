@@ -36,7 +36,7 @@ _The final equipment configuration and measurement connections will be updated a
 3. Ring oscillator output versus `VinVCO`
 4. Serial output
 5. Health-test flag
-6. Randomness of the output data
+6. Statistical Randomness of the output data
 7. Supply voltage and clock frequency
 8. Default pin states
 
